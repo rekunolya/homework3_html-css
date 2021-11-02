@@ -1,0 +1,280 @@
+body {
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+header,
+footer {
+  background-color: #ffffff;
+}
+
+a {
+  color: #a6adb1;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+}
+.container {
+  width: 1220px;
+  margin: 0 auto;
+  max-width: 100%;
+ 
+}
+.header {
+  z-index: 1;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.header__img {
+  margin-right: 10px;
+  line-height: 0;
+}
+
+.header__item {
+  display: flex;
+  margin-right: 40px;
+}
+
+.header__item a {
+  display: flex;
+  align-items: center;
+  transition: filter 0.35s;
+}
+
+.header__item:hover a {
+  filter: brightness(0.2);
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+.header__item:hover {
+  color: #282b31;
+}
+
+.header__list {
+  display: flex;
+  color: #a6adb1;
+}
+
+.header_log-out {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header_log-out-1 {
+  margin-right: 10px;
+}
+.card__log-out {
+  width: 254px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  opacity: 0;
+  font-size: 16px;
+  padding: 20px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  pointer-events: none;
+}
+
+.card__log-out::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    transform: translateY(-100%);
+    }
+
+.card_log-out_menu {
+  display: flex;
+  margin-bottom: 20px;
+  transition: color .35s;
+}
+.card_log-out_menu:last-child {
+  margin-bottom: 0;
+}
+.card_log-out_menu:hover {
+  color: #e24444;
+}
+.card_log-out_menu-item {
+    display: flex;
+    align-items: center;
+    }
+
+.card_log-out_menu-item img{
+    margin-right: 10px;}
+
+.arrow-ios-down {
+    transition: transform 350ms ease;
+}
+
+.header_log-out:hover .arrow-ios-down {
+  transform: rotate(180deg);
+  
+}
+.header_log-out:hover .card__log-out {
+  opacity: 1;
+  box-shadow: 5px 5px 5px #a6adb1;
+  pointer-events: auto;
+
+}
+
+.footer {
+  display: flex;
+}
+.footer_msg {
+  margin-right: 20px;
+}
+.main {
+  padding-top: 32px;
+}
+.text_caption {
+  font-size: 26px;
+  color: #282b31;
+  margin-bottom: 35px;  
+}
+.container_top {
+  height: 360px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  align-content: center;
+  margin-bottom: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.text_h1 {
+  font-size: 34px;
+  color: #282b31;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.text_text {
+  font-size: 18px;
+  color: #282b31;
+  align-items: left;
+  
+  margin-bottom: 20px;
+}
+
+.data {
+  font-size: 14px;
+  color: #5f5f6e;
+ 
+}
+.image {
+  height: 320px;
+  position: relative;
+ 
+}
+
+.image img {
+    border-radius: 15px;
+}
+.card_container {
+  display: flex;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  height: 324px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  width: calc(100% / 3);
+  transition: box-shadow .35s ease;
+}
+.card:last-child {
+  margin-right: 0;
+}
+.card:hover{
+  box-shadow: 5px 5px 5px #282b31;
+}
+
+.card_text {
+  font-size: 20px;
+  color: #282b31;
+  margin-bottom: 10px;
+}
+.card_data {
+  font-size: 16px;
+  color: #5f5f6e;
+}
+.card_img {
+  height: 190px;
+  border-radius: 15px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.card_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.25s;
+}
+
+.card_img:hover img {
+  transform: scale(1.2);
+}
+.card:hover img{
+  transform: scale(1.2);
+}
+.text_padding {
+  padding: 50px 0 0 40px;
+}
+
+.go_to_the_top {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 2;
+    position: fixed;
+    right: 30px;
+    bottom: 150px;
+  }
+
+.go_to_the_top img {
+    transition: transform 350ms ease;
+}
+.go_to_the_top:hover img{
+    transform: translateY(-50px);
+    
+}
+
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 0;
+    box-sizing: border-box;
+}
+
+.video {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
